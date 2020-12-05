@@ -1,9 +1,17 @@
+## Q1
+Mosiac may not have been the first web browser, but it was the first widely popular and widely downloaded browser. It was released in beta form for Unix operating systems in January of 1993. Unlike its competitors, mosiac allowed users to view images within web pages. Prior to Mosaic, images had to be loaded in a seperate window. 
+https://www.zdnet.com/article/mosaics-birthday-25-years-of-the-modern-web/
+
+The Dot Com bubble of 2000 provided a valuable lesson to investors and tech companies on the business side of the internet. During the late 1990's internet based companies were all the rage for venture capitalists and investors. This lead to an influx of startups promising grand, market changing products, without any concern for profitability or having actual products to sell. Money was poured into these internet companies from investors trying to get in on the next "big thing" and by 2000, the tech heavy Nasdaq industrial index peaked at 5,048 points. Eventually, the market began to realise that these companies did not have the underlying economics to justify their sky-high valuations. The bubble soon burst as a number of these companies went bankrupt. The Nasdaq would bottom-out at 1,114 points in October of 2002, losing almost 80% of its value, a loss it would take almost 15 years to recover from.
+https://www.investopedia.com/terms/d/dotcom-bubble.asp
+
+In the year 2005, YouTube was officialy launched. At the time, t YouTube quickly rose to the top and became the po
 
 
 ## Q2.
 Packets: 
 
-Packets are used by networking protocols to break up data into smaller pieces before they are sent out over a network. Once they arrive, the packets are then re-constructed by the computer and the data is presented to the user. Packets are divided up into multiple parts. The header, which contains information about the contents of the packet, who sent it and where it is going. The payload, which houses the actual data that is being transferred. Some packets might also contain a footer, this part tells the computer that it has reached the end of the packet.
+Packets are used by networking protocols to break up data into smaller pieces before they are sent out over a network. Once they arrive, the packets are then re-constructed by the computer and the data is presented to the user. Packets are divided up into multiple parts. The header, which contains information about the contents of the packet, who sent it and where it is going, and the payload. The payload houses the actual data that is being transferred. Some packets might also contain a footer, this part tells the computer that it has reached the end of the packet.
 
 https://computer.howstuffworks.com/question525.htm\
 https://www.techopedia.com/definition/6751/data-packet\
@@ -11,15 +19,28 @@ https://www.techopedia.com/definition/6751/data-packet\
 IP addresses:
 An IP address is a unique identifier used by a computer when it is connected to a network.\
 
-IPv4 is the current version of Internet Protocol and uses 32-bits for its addresses. Ipv4 can provide a total of 4.29 billion unique IP addresses. This was thought to be sufficient, however with the rising prevalence of the internet in recent years the number of unique IP addresses are running out. IPv6 was created as the solution to this problem, it uses 128-bits for its addresses and can support ~340 trillion trillion unique IP addresses. IP addresses have been crucial to the development of the internet. Without IP adresses, we would be unable to send or receive data from other computers on the int
-
-Domain Name and DNS
-Domain names are a way for humans to remember and access websites without knowing their IP addresses.
-The Domain Name System, or DNS, is a collection of domain names and their respective IP addresses.  
-
+IPv4 is the current version of Internet Protocol and uses 32-bits for its addresses. Ipv4 can provide a total of 4.29 billion unique IP addresses. This was thought to be sufficient, however with the rising prevalence of the internet in recent years the number of unique IP addresses are running out. IPv6 was created as the solution to this problem, it uses 128-bits for its addresses and can support ~340 trillion trillion unique IP addresses. IP addresses have been crucial to the development of the internet. Without IP adresses, we would be unable to send or receive data from other computers 
 https://www.networkworld.com/article/3254575/what-is-ipv6-and-why-aren-t-we-there-yet.html#:~:text=IPv6%20has%20been%20in%20the,advantages%2C%20adoption%20is%20still%20slow.\
 https://www.thousandeyes.com/learning/techtorials/ipv4-vs-ipv6#:~:text=IPv4%20uses%20a%2032-bit%20address%20for%20its%20Internet%20addresses.&text=IPv6%20utilizes%2012\
+
+Routers
+Routers manage and direct data packets to their specified destination. When a router receives data, it consults its routing table. This is a table that contains all of the available routes and destinations. The router will then decide the optimal route and send the packets to their target. Routers are critical to the internet as we know it today. 
+
+Domain Name and DNS
+Domain names are a way for humans to access websites without knowing their IP addresses.The Domain Name System, or DNS, is a collection of domain names and their respective IP addresses. When a user types a website into a web browser e.g. "www.facebook.com" this query is received by a DNS server. After querying multiple different DNS servers, the browser will be provided with the IP adress for that domain name, with which it can access the website. The DNS has accelerated the development of the internet by making it much easier for humans to access and remember specific websites.
+
+
 https://www.networkworld.com/article/3268449/what-is-dns-and-how-does-it-work.html#:~:text=The%20Domain%20Name%20System%20resolves,even%20security%20in%20the%20process.&text=At%20its%20most%20basic%2C%20DNS,to%20communicate%20with%20each%20other.
+
+## Q3.
+TCP
+Transmission control protocol (TCP) is a web standard for the way that information is transmitted over the internet. If a web server wanted to send a HTML file to a computer, TCP on the server would break the file down into packets and facilitate their transmission to the target computer. On the receiving computer, the TCP program layer would receive the packets and check that they all have arrived in the desired condition. If some of the packets does not arrive, TCP will request the re-sending of all required packets. If everything is fine, TCP will assemble the packets back into their original file and send that file to the desired application, usually a web browser. NEED MORE
+https://searchnetworking.techtarget.com/definition/TCP
+
+HTTP/HTTPS
+HTTP stands for "hypertext transfer protocol" HTTP is a network protocol that allows web browsers and web servers to exchange data. HTTP was increadibly commonplace on the internet, however, data sent through the HTTP protocol is not secure. Any information sent through HTTP can be intercepted and possibly altered by people with malicious intent.
+
+HTTPS is the expanded and updated version of HTTP. The S stands for secure due to the increased level of security HTTPS provides over HTTP. This security is acheived thanks to Transport Layer Security that encrypts the connection between a computer and a web server. HTTPS is the standard for interacting with websites that process payment, or require the user to login.
 
 ## Q4.
 An array is a container that can store any number of elements. These elements can be of any data type, strings, integers or floats, booleans and even other arrays or data structures. Elements in an array are given an index position that starts at 0 and increments by 1 for each additional element. A common use case for the array data structure would be storing the name of every student in a class.
@@ -32,13 +53,11 @@ https://medium.com/swift2go/stacks-and-lifo-structures-implementation-and-use-ca
 https://medium.com/amiralles/stacks-are-a-special-kind-of-linked-lists-that-allow-us-to-efficiently-store-retrieve-data-in-last-9efab58fd100
 ## Q5.
 
-Both interpreters and compilers accomplish the same function, they both convert human readable source code into binary 1s and 0s that the computer can understand, this is known as machine code. \
+Both interpreters and compilers accomplish the same function, they both convert human readable source code into binary 1s and 0s that the computer can understand, this is known as machine code. 
 
-A compiler takes the source code and scans through every line, checking for errors. If it encounters any problems, they are all shown to the user at the end of the process. \
+COmpiled programming languages such as C++ and C need to be compiled in order to be executed. The compiler takes the source code and scans through every line, checking for errors. If it encounters any problems, they are all shown to the user tat the end of the process. Once the compilation has been completed and if no errors are pressent, the compiler will present the code to the user in the form of an executable file. (.exe) These executable files are faster than running an interpreted language and are one of the main advantages to using a code compiler.  
 
-Once the compiler has completed *** present the code to the user in the form of an executable file. (.exe). These executable files are faster than using an interpreter and are one of the main advantages to using a code compiler.
-
-An interpreter however, will process the source code line by line as it executes the program.
+Interpreted languages such as Ruby and Python can be run straight from the source code. When the program is executed, the code is converted line by line into machine code. This provides an advantage to the programmer in that they do not need to run a compiler every time they change the source code. However, because the interpreter is compiling and error-checking every line as it reads it, interpreted languages suffer from slower performance than compiled languages. 
 
 ## Q6.
 
@@ -84,6 +103,9 @@ https://bigcheaphosting.com/advantages-and-disadvantages-of-php/
 
 https://data-flair.training/blogs/advantages-and-disadvantages-of-cpp/
 https://www.geeksforgeeks.org/history-of-c/
+
+## Q7
+Unlike the US, Australia does not have freedom of speech laws enshrined in its constitutuion or elsewhere. It is however, party to a number of international human rights treaties. Among these is the International Covenant on Civil and Politial Rights. Legally, this means that an IT professional has no obligation to uphold a persons freedom of thought or speech. Ethically, I believe this is wrong and people should be able to say what they think without fear of government intervention.
 
 
 ## Q8. 
@@ -135,10 +157,11 @@ true
 To solve this problem I would use three sets of classes
 - Dish 
 This parent class would contain broad class variables that are applicable to every item on the menu e.g. name of the dish and price.
-- Course
-The course class would be a child of the dish class, it would contain variables and information that are specific to the course that the meal is served in. e.g. prep/cooking time on entrees should be lower than main courses, breakfast items are only available at a certain time of day etc.
 - Item
-The Item class would be a child of both the dish and course class. It would contain any information and methods that are specific to that individual menu item. e.g. ingredients and allergy information.
+The Item class would be a child of the dish class. It would contain any information and methods that are specific to that individual menu item. e.g. ingredients and allergy information.
+- Customer
+The customer class would contain information and methods to do with the customer ordering and paying for their meal. Some information that the class could hold would be the customers allergy information, the number of dishes that they have ordered and what table they are sitting at.
+
 ## Q12
 
 The error that is stopping the code from running is located on line two. This error is being thrown because the program is trying to multiply a string by 9/5. The vaiable celcius contains a string due to the use of the gets method on line 1. This method asks for input from the user and stores it as a string, regardless of whether the user input contained characters or numbers. This is a simple problem that can be fixed by adding the to_i method on the celcius variable.
@@ -150,8 +173,31 @@ print "The result is: "
 print farenheit
 puts "."
 ```
+
+## Q13
+Below is the re-written working code.
+```Ruby
+    arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+    i = 0
+    while (i < arr.size - 1 and arr[i] < arr[i + 1])
+    i = i + 1
+    end
+
+    puts i 
+    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    print arr
+```
+
 ## Q14
-    <!-- pseudocode: iterate over every number from 1 up to and including 100. If the number is evenly divisible by any number from, do nothing. If the number is not evenly divisible by 2, push to an answer array. List out every number in the answer array. -->
+
+Pseudocode
+   - Store the values of 1 up to and including 100 in an array.
+   - Iterate over each item in the array.
+   - For each value, check if it is evenly divisible by any of the numbers ranging from 2 up to the square root of the value.
+   - If yes, the value is composite. Move on to the next value in the array.
+   - If no, the value is prime.
+   - Puts value and repeat for each item in the array.
+
 
 ## Q15
 ```Ruby
@@ -171,7 +217,7 @@ end
 
 ## Q16
 ```Ruby 
-def allergies(n)
+def allergies(n, choice)
     answer = []
     if n > 255      
     puts "Error! your score is too high."
@@ -204,12 +250,21 @@ def allergies(n)
             end 
         end
     end
-    return answer
+    if answer.include?(choice)
+        puts "You are allergic to #{choice}"
+    else 
+        puts "You are not allergic to #{choice}"
+    end
+    puts
+    puts "Printing your full list of allergies..."
+    puts answer
 end
 
 print "What is your allergy score? (1-255) "
 score = gets.chomp.to_i
+print "What allergy would you like to check for: "
+choice = gets.chomp
+system "clear"
 
-puts "You are allergic to: "
-puts allergies(score)
+allergies(score, choice)
 ```
